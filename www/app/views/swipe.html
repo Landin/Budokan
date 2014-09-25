@@ -1,0 +1,17 @@
+<ion-view title="Swipe">
+<ion-content class="padding">
+
+<label class="item item-input">
+  <span class="input-label"></span>
+  <input type="number" ng-model="Swipe.number" placeholder="Number.." autofocus="on">
+</label>
+
+<button class="button button-block button-dark" ng-click="callswipe()">Swipe</button>
+
+<div class="card" ng-show="message">
+  <div class="item item-divider">{{message.status}}</div>
+  <div class="item item-text-wrap">{{message.fullname}}</div>
+</div>
+            
+</ion-content>
+</ion-view>

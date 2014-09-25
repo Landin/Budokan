@@ -9,7 +9,7 @@ angular.module('starter.controllers', [])
     var self = this
     
     $scope.callswipe = function() {
-        var data = { "number": self.number};
+        var data = {"number": self.number};
         var result = Swipe.skicka(data).then(function(data){
             $scope.message = data;
         });
